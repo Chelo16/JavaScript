@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    background-image: url(tablero.jpg);
+    background-size: cover;
+    font-family: serif;
+  }
+  
+  #resultado {
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 50%;
+    translate: -50% -50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-style: bold;
+    margin: 0 auto;
+    display:block;
+  }
+  .container1 {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    translate: -50% -50%;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .container2 {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    translate: -50% -50%;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .container3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    translate: -50% -50%;
+    rotate: 20deg;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .container4 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    translate: -50% -50%;
+    rotate: -20deg;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .container5 {
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 22%;
+    translate: -50% -50%;
+    rotate: 45deg;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .container6 {
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 78%;
+    translate: -50% -50%;
+    rotate: -45deg;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .mazo{
+    position: absolute;
+    top: 5%;
+    left: 0;
+  }
+
+  .mazo img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  section {
+    text-align: center;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-style: bold;
+    margin-bottom: 10px;
+  }
+
+  label {
+    text-align: center;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-style: bold;
+    margin-bottom: 10px;
+  }
+  
+  
+  section p{
+    margin: 0;
+  }
+  
+  :root{
+    --num-columnas: 3;
+    --num-filas: 3;
+    --size: 20px;
+    --escala: 4px;
+  }
+   
+  .mesa{
+    position:relative;
+  }
+ 
+
+  .mesa img{
+    position: absolute;
+    text-align: center;
+    line-height: var(--size);
+    margin-top: 30px;
+  }
+  
+  .mesa img:nth-child(1){
+    position: absolute;
+    z-index:0;
+    left: -15px;
+    rotate: -15deg;
+
+  }
+
+  .mesa img:nth-child(2){
+    position: absolute;
+    rotate: -1deg;
+    left: 25px;
+    z-index: 1;
+  }
+
+  .mesa img:nth-child(3){
+    position: absolute;
+    left: 55px;
+    z-index:2;
+    rotate: 15deg;
+  }
+
+  .mesa img:nth-child(4){
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    z-index: 3;
+    rotate: 23deg;
+  }
+
+  .mesa img:nth-child(5){
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    z-index: 3;
+    rotate: 36deg;
+  }
+
+  .mesa img:nth-child(6){
+    position: absolute;
+    left: 119px;
+    top: 40px;
+    z-index: 3;
+    rotate: 45deg;
+  }
+
+  
+
+  section div:hover {
+    background-color: #9d9d9d;
+    border-left: 2px outset #c8c8c8;
+    border-top: 2px outset #c8c8c8;
+    border-right: 2px outset #a0a0a0;
+    border-bottom: 2px outset #a0a0a0;
+  }
+  
+  section div:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px) translateX(1px);
+  }
